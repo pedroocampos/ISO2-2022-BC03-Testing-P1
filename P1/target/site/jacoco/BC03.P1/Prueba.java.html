@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Prueba.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">P1</a> &gt; <a href="index.source.html" class="el_package">BC03.P1</a> &gt; <span class="el_source">Prueba.java</span></div><h1>Prueba.java</h1><pre class="source lang-java linenums">package BC03.P1;
+
+import java.util.*;
+
+import BC03.P1.Fecha.DatoInvalidoException;
+
+<span class="nc" id="L7">public class Prueba {</span>
+// Ejemplo de clase para ejecutar la clase Fecha
+	
+<span class="nc" id="L10">	static Scanner sc = new Scanner(System.in);</span>
+	
+	public static void main(String[] args) throws DatoInvalidoException {
+<span class="nc" id="L13">		Fecha fecha = pedirDatos();</span>
+<span class="nc" id="L14">		fecha.comprobarBisiesto();</span>
+<span class="nc" id="L15">	}</span>
+
+	public static Fecha pedirDatos() throws DatoInvalidoException {
+<span class="nc" id="L18">		Fecha fecha = null;</span>
+		
+		try {
+<span class="nc" id="L21">			System.out.print(&quot;Día &quot;);</span>
+<span class="nc" id="L22">			int dia = sc.nextInt();</span>
+<span class="nc" id="L23">			System.out.print(&quot;Mes &quot;);</span>
+<span class="nc" id="L24">			int mes = sc.nextInt();</span>
+<span class="nc" id="L25">			System.out.print(&quot;Año &quot;);</span>
+<span class="nc" id="L26">			int agno = sc.nextInt();</span>
+<span class="nc" id="L27">			System.out.print(&quot;\n&quot;);</span>
+<span class="nc" id="L28">			fecha = new Fecha(dia, mes, agno);</span>
+<span class="nc" id="L29">		} catch(InputMismatchException e) {</span>
+<span class="nc" id="L30">			System.out.println(&quot;Los datos no pueden ser letras o decimales&quot;);</span>
+		}
+		
+<span class="nc" id="L33">		return fecha;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

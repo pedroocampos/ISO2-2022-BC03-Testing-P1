@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Fecha.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">P1</a> &gt; <a href="index.source.html" class="el_package">BC03.P1</a> &gt; <span class="el_source">Fecha.java</span></div><h1>Fecha.java</h1><pre class="source lang-java linenums">package BC03.P1;
+
+public class Fecha {
+
+	@SuppressWarnings(&quot;serial&quot;)
+	class DatoInvalidoException extends Exception {
+<span class="fc" id="L7">		public DatoInvalidoException(String msg) {</span>
+<span class="fc" id="L8">			super(msg);</span>
+<span class="fc" id="L9">		}</span>
+	}
+
+	private int dia, mes, agno;
+
+<span class="fc" id="L14">	public Fecha(int dia, int mes, int agno) throws DatoInvalidoException {</span>
+<span class="fc" id="L15">		this.setDia(dia);</span>
+<span class="fc" id="L16">		this.setMes(mes);</span>
+<span class="fc" id="L17">		this.setAgno(agno);</span>
+<span class="fc" id="L18">	}</span>
+
+	public void setDia(int dia) throws DatoInvalidoException {
+<span class="pc bpc" id="L21" title="2 of 4 branches missed.">		if (dia &gt;= 1 &amp;&amp; dia &lt;= 31)</span>
+<span class="fc" id="L22">			this.dia = dia;</span>
+		else
+<span class="nc" id="L24">			throw new DatoInvalidoException(&quot;El día debe ser un numero entre 1 y 31&quot;);</span>
+<span class="fc" id="L25">	}</span>
+
+	public void setMes(int mes) throws DatoInvalidoException {
+<span class="pc bpc" id="L28" title="2 of 4 branches missed.">		if (mes &gt;= 1 &amp;&amp; mes &lt;= 12)</span>
+<span class="fc" id="L29">			this.mes = mes;</span>
+		else
+<span class="nc" id="L31">			throw new DatoInvalidoException(&quot;El mes debe ser un numero entre 1 y 12&quot;);</span>
+<span class="fc" id="L32">	}</span>
+
+	public void setAgno(int agno) throws DatoInvalidoException {
+<span class="fc bfc" id="L35" title="All 2 branches covered.">		if (agno &gt;= 1)</span>
+<span class="fc" id="L36">			this.agno = agno;</span>
+		else
+<span class="fc" id="L38">			throw new DatoInvalidoException(&quot;El año debe ser un numero positivo&quot;);</span>
+<span class="fc" id="L39">	}</span>
+
+	public boolean comprobarBisiesto() {
+<span class="pc bpc" id="L42" title="2 of 6 branches missed.">		boolean bisiesto = ((this.agno % 4 == 0) &amp;&amp; (this.agno % 100 != 0) || (this.agno % 400 == 0));</span>
+<span class="fc" id="L43">		return bisiesto;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,81 @@
+# Created at 2022-12-19T15:36:32.565
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:122)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+# Created at 2022-12-19T15:36:32.569
+Unexpected IOException with stream: Los datos no pueden ser letras o decimales
+
+
+# Created at 2022-12-19T15:36:32.572
+Unexpected IOException: 6,1,BC03.P1.FechaTest,test1(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.573
+Unexpected IOException: 5,1,BC03.P1.FechaTest,test2(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.573
+Unexpected IOException with stream: Día 
+
+# Created at 2022-12-19T15:36:32.574
+Unexpected IOException with stream: Los datos no pueden ser letras o decimales
+
+
+# Created at 2022-12-19T15:36:32.581
+Unexpected IOException: 7,1,BC03.P1.FechaTest,test2(BC03.P1.FechaTest),null,null,null,null,FechaTest.test2:32 NullPointer,java.lang.NullPointerException\000A\0009at BC03.P1.FechaTest.test2(FechaTest.java:32)\000A
+
+
+# Created at 2022-12-19T15:36:32.583
+Unexpected IOException: 5,1,BC03.P1.FechaTest,test3(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.585
+Unexpected IOException with stream: Día 
+
+# Created at 2022-12-19T15:36:32.586
+Unexpected IOException with stream: Los datos no pueden ser letras o decimales
+
+
+# Created at 2022-12-19T15:36:32.587
+Unexpected IOException: 6,1,BC03.P1.FechaTest,test3(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.588
+Unexpected IOException: 5,1,BC03.P1.FechaTest,test4(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.589
+Unexpected IOException with stream: Día 
+
+# Created at 2022-12-19T15:36:32.590
+Unexpected IOException with stream: Los datos no pueden ser letras o decimales
+
+
+# Created at 2022-12-19T15:36:32.591
+Unexpected IOException: 7,1,BC03.P1.FechaTest,test4(BC03.P1.FechaTest),null,null,null,null,FechaTest.test4:53 NullPointer,java.lang.NullPointerException\000A\0009at BC03.P1.FechaTest.test4(FechaTest.java:53)\000A
+
+
+# Created at 2022-12-19T15:36:32.592
+Unexpected IOException: 5,1,BC03.P1.FechaTest,test5(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.593
+Unexpected IOException with stream: Día 
+
+# Created at 2022-12-19T15:36:32.593
+Unexpected IOException with stream: Los datos no pueden ser letras o decimales
+
+
+# Created at 2022-12-19T15:36:32.594
+Unexpected IOException: 6,1,BC03.P1.FechaTest,test5(BC03.P1.FechaTest),null,null,null
+
+
+# Created at 2022-12-19T15:36:32.595
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,BC03.P1.FechaTest,null,null,null
+
+
