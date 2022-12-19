@@ -1,1 +1,4 @@
-# ISO2-2022-BC03-Testing-P1
+# Testing del Problema 1
+En la Wiki está toda la información
+
+Autores: Pedro y Dario
