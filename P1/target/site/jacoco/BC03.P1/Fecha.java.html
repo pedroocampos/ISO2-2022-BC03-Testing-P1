@@ -3,8 +3,8 @@
 public class Fecha {
 
 	@SuppressWarnings(&quot;serial&quot;)
-	class DatoInvalidoException extends Exception {
-<span class="fc" id="L7">		public DatoInvalidoException(String msg) {</span>
+	static class DatoInvalidoException extends Exception {
+		public DatoInvalidoException(String msg) {
 <span class="fc" id="L8">			super(msg);</span>
 <span class="fc" id="L9">		}</span>
 	}
@@ -39,7 +39,7 @@ public class Fecha {
 <span class="fc" id="L39">	}</span>
 
 	public boolean comprobarBisiesto() {
-<span class="pc bpc" id="L42" title="2 of 6 branches missed.">		boolean bisiesto = ((this.agno % 4 == 0) &amp;&amp; (this.agno % 100 != 0) || (this.agno % 400 == 0));</span>
+<span class="pc bpc" id="L42" title="2 of 6 branches missed.">		boolean bisiesto = this.agno % 4 == 0 &amp;&amp; this.agno % 100 != 0 || this.agno % 400 == 0;</span>
 <span class="fc" id="L43">		return bisiesto;</span>
 	}
 }

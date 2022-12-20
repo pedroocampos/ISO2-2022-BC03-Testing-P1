@@ -3,7 +3,7 @@ package BC03.P1;
 public class Fecha {
 
 	@SuppressWarnings("serial")
-	class DatoInvalidoException extends Exception {
+	static class DatoInvalidoException extends Exception {
 		public DatoInvalidoException(String msg) {
 			super(msg);
 		}
@@ -39,7 +39,7 @@ public class Fecha {
 	}
 
 	public boolean comprobarBisiesto() {
-		boolean bisiesto = ((this.agno % 4 == 0) && (this.agno % 100 != 0) || (this.agno % 400 == 0));
+		boolean bisiesto = this.agno % 4 == 0 && this.agno % 100 != 0 || this.agno % 400 == 0;
 		return bisiesto;
 	}
 }

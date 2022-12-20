@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"BC03.P1","c":"FechaTest","l":"FechaTest()","u":"%3Cinit%3E()"},{"p":"BC03.P1","c":"FechaTest","l":"test1()"},{"p":"BC03.P1","c":"FechaTest","l":"test2()"},{"p":"BC03.P1","c":"FechaTest","l":"test3()"},{"p":"BC03.P1","c":"FechaTest","l":"test4()"}];updateSearchResults();
