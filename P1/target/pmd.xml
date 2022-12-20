@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.49.0" timestamp="2022-12-20T12:09:48.539">
+<file name="C:\Users\pedri\eclipse-workspace\P1\src\main\java\BC03\P1\Fecha.java">
+<violation beginline="12" endline="12" begincolumn="14" endcolumn="16" rule="UnusedPrivateField" ruleset="Best Practices" package="BC03.P1" class="Fecha" variable="dia" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'dia'.
+</violation>
+<violation beginline="12" endline="12" begincolumn="19" endcolumn="21" rule="UnusedPrivateField" ruleset="Best Practices" package="BC03.P1" class="Fecha" variable="mes" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'mes'.
+</violation>
+<violation beginline="42" endline="42" begincolumn="23" endcolumn="94" rule="UselessParentheses" ruleset="Code Style" package="BC03.P1" class="Fecha" method="comprobarBisiesto" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

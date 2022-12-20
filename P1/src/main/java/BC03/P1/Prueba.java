@@ -11,7 +11,7 @@ public class Prueba {
 	
 	public static void main(String[] args) throws DatoInvalidoException {
 		Fecha fecha = pedirDatos();
-		fecha.comprobarBisiesto();
+		System.out.println(fecha.comprobarBisiesto());
 	}
 
 	public static Fecha pedirDatos() throws DatoInvalidoException {

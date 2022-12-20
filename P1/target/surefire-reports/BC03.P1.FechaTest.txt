@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: BC03.P1.FechaTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec <<< FAILURE!
-test1(BC03.P1.FechaTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec <<< FAILURE!
+test1(BC03.P1.FechaTest)  Time elapsed: 0.017 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: Ha saltado una excepción
 	at junit.framework.Assert.fail(Assert.java:57)
 	at BC03.P1.FechaTest.test1(FechaTest.java:24)
@@ -39,7 +39,7 @@ junit.framework.AssertionFailedError: Ha saltado una excepción
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-test3(BC03.P1.FechaTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+test3(BC03.P1.FechaTest)  Time elapsed: 0 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: Ha saltado una excepción
 	at junit.framework.Assert.fail(Assert.java:57)
 	at BC03.P1.FechaTest.test3(FechaTest.java:46)
